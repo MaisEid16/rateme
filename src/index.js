@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 app.post('/rate', (req, res) => {
   // extract the verification token, slash command text,
   // and trigger ID from payload
-  console.log('one ');
+  console.log('one ',process.env.SLACK_VERIFICATION_TOKEN);
   const { token, text, trigger_id } = req.body;
 
   // check that the verification token matches expected value
