@@ -26,10 +26,12 @@ app.get('/', (req, res) => {
 app.post('/rate', (req, res) => {
   // extract the verification token, slash command text,
   // and trigger ID from payload
+  console.log('one ');
   const { token, text, trigger_id } = req.body;
 
   // check that the verification token matches expected value
   if (token === process.env.SLACK_VERIFICATION_TOKEN) {
+    console.log('one 2 ');
     // create the dialog payload - includes the dialog structure, Slack API token,
     // and trigger ID
     const dialog = {
@@ -66,11 +68,12 @@ app.post('/rate', (req, res) => {
         ],
       }),
     };
-
+    console.log('one 3 ');
     // open the dialog by calling dialogs.open method and sending the payload
     axios.post('https://slack.com/api/dialog.open', qs.stringify(dialog))
       .then((result) => {
         debug('dialog.open: %o', result.data);
+        console.log('one ',result.data);
         res.send('');
       }).catch((err) => {
         debug('dialog.open call failed: %o', err);
