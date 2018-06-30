@@ -73,7 +73,7 @@ app.post('/rate', (req, res) => {
     axios.post('https://slack.com/api/dialog.open', qs.stringify(dialog))
       .then((result) => {
         debug('dialog.open: %o', result.data);
-        console.log('one ',result.data);
+        console.log('one 4 ',result.data);
         res.send('');
       }).catch((err) => {
         debug('dialog.open call failed: %o', err);
