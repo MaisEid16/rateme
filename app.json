@@ -1,6 +1,7 @@
 {
   "name": "Slack Slash Command Blueprint",
   "description": "A sample Slack app that implements a skeleton helpdesk integration using a Slash Command and Dialog",
+  "repository":"https://github.com/MaisEid16/rateme.git",
   "logo": "https://a.slack-edge.com/f30f/img/services/api_200.png",
   "keywords": ["node", "express", "slack", "slash command"],
   "env": {
@@ -9,6 +10,9 @@
     },
     "SLACK_VERIFICATION_TOKEN": {
       "description": "k2xItuAR4ZZ0Wx305eUferCw"
+    },
+    "PORT": {
+      "description":"3000"
     }
   }  
 }
