@@ -6,13 +6,10 @@
   "keywords": ["node", "express", "slack", "slash command"],
   "env": {
     "SLACK_ACCESS_TOKEN": {
-      "description": "xoxp-363603873302-362849389029-390085936416-8d27faa0ae1b70cd963b3347ef64a426",
+      "description": "xoxp-363603873302-362849389029-390085936416-8d27faa0ae1b70cd963b3347ef64a426"
     },
     "SLACK_VERIFICATION_TOKEN": {
       "description": "k2xItuAR4ZZ0Wx305eUferCw"
-    },
-    "PORT": {
-      "description":"3000"
     }
   }  
 }
